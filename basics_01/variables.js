@@ -14,3 +14,10 @@ console.log(accountCity)
 
 accountPassword = "222222"
 console.log(accountPassword)
+console.table([accountId, accountEmail, accountPassword, accountCity])
+
+/* prefer not to use var due to block scope and functional scope. */
+
+let accountState;
+
+console.table([accountId, accountEmail, accountPassword, accountCity, accountState])
